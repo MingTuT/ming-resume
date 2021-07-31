@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 		<!-- 此按钮用来调试样式 -->
-		<button type="button" @click="skip">跳过</button>
+		<!-- <button type="button" @click="skip">跳过</button> -->
     <style-editor ref="styleEditor" :code="currentStyle"/>
 		<resume-editor ref="resumeEditor" :markdown="currentMarkdown" :enableHtml="enableHtml"/>
 	</div>
@@ -117,12 +117,12 @@ html{
 `
 		],
 		currentMarkdown: '',
-		fullMarkdown: `<img src="/user.png" > 林明辉
+		fullMarkdown: `<img src="user.png" > 林明辉
 ----
 
 现在就读于 广东技术师范大学 ，是一名软件工程专业的大四学生
 
-<img src="/skills.png" > 掌握技能
+<img src="iconfont/skills.png" > 掌握技能
 ----
 
 * Vue.js
@@ -130,7 +130,7 @@ html{
 * Bootstrap + JQuery
 * Node.js
 
-<img src="/project.png" > 项目经验
+<img src="project.png" > 项目经验
 ----
 
 1. 仿蘑菇街购物商城
@@ -142,7 +142,7 @@ html{
 	- 软件水平考试 - 程序员
 	- 大学英语四级
 
-<img src="/link.png" > 链接
+<img src="link.png" > 链接
 ----
 
 * [邮箱] 409025631@qq.com
